@@ -15,17 +15,17 @@ public class ProductoImpl implements IProducto {
     @Autowired
     private ProductoDao productoDao;
 
-    @Transactional
-    @Override
-    public Producto Guardar(Producto producto) {
-        return productoDao.save(producto);
-    }
+    //@Transactional
+    //@Override
+    //public Producto Guardar(Producto producto) {
+    //    return productoDao.save(producto);
+    //}
 
-    @Transactional(readOnly = true)
-    @Override
-    public Producto ProductoPorId(Integer id) {
-        return productoDao.findById(id).orElse(null);
-    }
+    //@Transactional(readOnly = true)
+    //@Override
+    //public Producto ProductoPorId(Integer id) {
+    //    return productoDao.findById(id).orElse(null);
+    //}
 
     @Transactional(readOnly = true)
     @Override
@@ -33,9 +33,9 @@ public class ProductoImpl implements IProducto {
         return (List<Producto>) productoDao.findAll();
     }
 
-    @Transactional
-    @Override
-    public void Eliminar(Producto producto) {
-        productoDao.delete(producto);
-    }
+    //@Transactional
+    //@Override
+    //public void Eliminar(Producto producto) {
+    //    productoDao.delete(producto);
+    //}
 }

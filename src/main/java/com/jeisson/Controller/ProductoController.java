@@ -14,26 +14,26 @@ public class ProductoController {
     @Autowired
     private IProducto productoService;
 
-    @PostMapping("Producto")
-    public Producto Guardar(@RequestBody Producto producto){
-        return productoService.Guardar(producto);
-    }
+    //@PostMapping("Producto")
+    //public Producto Guardar(@RequestBody Producto producto){
+    //    return productoService.Guardar(producto);
+    //}
 
-    @PutMapping("Producto")
-    public Producto Actualizar(@RequestBody Producto producto){
-        return productoService.Guardar(producto);
-    }
+    //@PutMapping("Producto")
+    //public Producto Actualizar(@RequestBody Producto producto){
+    //    return productoService.Guardar(producto);
+    //}
 
-    @DeleteMapping("Producto/{id}")
-    public void Eliminar(@PathVariable Integer id){
-        Producto productoEliminar = productoService.ProductoPorId(id);
-        productoService.Eliminar(productoEliminar);
-    }
+    //@DeleteMapping("Producto/{id}")
+    //public void Eliminar(@PathVariable Integer id){
+    //    Producto productoEliminar = productoService.ProductoPorId(id);
+    //    productoService.Eliminar(productoEliminar);
+    //}
 
-    @GetMapping("Producto/{id}")
-    public Producto ProductoPorId (@PathVariable Integer id){
-        return productoService.ProductoPorId(id);
-    }
+    //@GetMapping("Producto/{id}")
+    //public Producto ProductoPorId (@PathVariable Integer id){
+    //    return productoService.ProductoPorId(id);
+    //}
 
     @GetMapping("Productos")
     public List<Producto>  Productos (){
